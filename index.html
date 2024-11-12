@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1 class="text-title">Clientes</h1>
+        <input type="text" id="searchMesaInput" placeholder="Pesquisar mesa..." />
+        <button id="addButton">Adicionar Clientes</button>
+        <input class="nameMesaInput" type="text" id="itemName" placeholder="Digite o nome da mesa">
+        <button id="confirmButton" class="btn-ConfirmarMesa">Confirmar</button>
+        <div class="itensMesas">
+            <div id="items"></div>
+        </div>
+    </div>
+
+    <div id="mesaPage" style="display:none;">
+        <h2 id="mesaTitle"></h2>
+
+        <button id="deleteMesaButton" class="btn-delete">Excluir Mesa</button>
+        <button id="backButton" class="btn-Voltar">Voltar</button>
+        <div id="mesaItems"></div>
+        <div id="totalValue" class="total-value">Total: R$ 0.00</div>
+        <button id="addMesaItemButton" class="btn btn-2 btn-sep icon-cart">Adicionar Item</button>
+        <div>
+            <button onclick="exportarParaTexto()">Exportar para Texto</button>
+            <button onclick="exportarParaPDF()">Exportar para PDF</button>
+            <button onclick="imprimirComprovante()">Imprimir Comprovante</button>
+        </div>
+
+    </div>
+
+    <div id="modal" style="display: none;">
+        <div id="modalContent">
+            <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Pesquisar item...">
+            <span class="close">&times;</span>
+            <h3>Escolha um item:</h3>
+            <div id="itemOptions"></div>
+            <button id="confirmItemButton">Adicionar Item</button>
+        </div>
+        <div id="itemOptions"></div>
+    </div>
+</body>
+<script src="itens.js"></script>
+<script src="./script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</html>
