@@ -20,9 +20,9 @@ const itens = [
     { nome: "Corona Extra 330ML", preco: 9.00},
     { nome: "Petra Lata", preco: 4.00},
     { nome: "Cajuina 1L", preco: 8.00},
-    { nome: "Cajuina 2L", preco: 12.00}
-    { nome: "Coca Cola 600ML", preco: 7.00}
-    { nome: "Pepsi 1L", preco: 8.00}
-    { nome: "Sukita 1L", preco: 8.00}
+    { nome: "Cajuina 2L", preco: 12.00},
+    { nome: "Coca Cola 600ML", preco: 7.00},
+    { nome: "Pepsi 1L", preco: 8.00},
+    { nome: "Sukita 1L", preco: 8.00},
     // Adicione mais itens conforme necessário
   ];
